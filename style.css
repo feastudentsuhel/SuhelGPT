@@ -1,40 +1,26 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f0f2f5;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuhelGPT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-/* Header */
-h1 {
-    margin: 0;
-    padding: 15px;
-    text-align: center;
-    background: white;
-    border-bottom: 1px solid #ddd;
-    font-size: 16px;
-}
+<body>
 
-/* Chat area */
-#chatbox {
-    height: 80vh;
-    overflow-y: auto;
-    padding: 10px;
-}
+<div class="header">SuhelGPT</div>
 
-/* Message rows */
-.user, .ai {
-    display: flex;
-    margin: 10px;
-}
+<div class="chat" id="chat"></div>
 
-/* Align */
-.user {
-    justify-content: flex-end;
-}
-.ai {
-    justify-content: flex-start;
-}
+<div class="input-area">
+  <input id="input" placeholder="Type message..." />
+  <button onclick="send()">Send</button>
+</div>
 
+<script src="script.js"></script>
+</body>
+</html>
 /* Chat bubbles */
 .user span {
     background: #0084ff;
